@@ -1,0 +1,311 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  position: relative;
+}
+.bg_image {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.container {
+  padding: 80px;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .container {
+    padding: 100px 20px;
+  }
+}
+/* Start Header */
+.container .header .logo img {
+  max-width: 100px;
+  height: 100px;
+  margin-bottom: 40px;
+}
+.container .header .title {
+  max-width: 410px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+.container .header .title h3 {
+  font-size: 26px;
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 10px;
+}
+.container .header .title p {
+  font-size: 12px;
+  color: hsl(201, 11%, 66%);
+}
+.buttons {
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 100px;
+}
+.buttons button {
+  color: white;
+  padding: 8px 15px;
+  border-radius: 50px;
+  border-color: transparent;
+  font-weight: bold;
+  cursor: pointer;
+}
+.buttons .ios {
+  box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.054);
+  border-radius: 50px;
+}
+.buttons .ios button {
+  background-color: hsl(171, 66%, 44%);
+  box-shadow: 0px 1.9px 1px 0.1px hsl(171, 64%, 37%);
+}
+.buttons .mac {
+  box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.054);
+  border-radius: 50px;
+}
+.buttons .mac button {
+  background-color: hsl(233, 100%, 69%);
+  box-shadow: 0px 1.9px 1px 0.1px hsl(233, 85%, 63%);
+}
+@media (max-width: 767px) {
+  .buttons {
+    flex-direction: column;
+  }
+  .buttons button {
+    width: 100%;
+    padding: 15px 100px;
+    margin-bottom: 10px;
+  }
+  .container .header .title p {
+    font-size: 14px;
+  }
+}
+/* End Header */
+/* Start info */
+.container .info {
+  text-align: center;
+  margin: auto;
+  max-width: 480px;
+  margin-bottom: 60px;
+}
+.container .info h4 {
+  font-size: 26px;
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 10px;
+}
+.container .info p {
+  font-size: 12px;
+  color: hsl(201, 11%, 66%);
+}
+@media (max-width: 767px) {
+  .container .info p {
+    font-size: 14px;
+  }
+}
+/* End info */
+/* Start featuers */
+.container .featuers {
+  display: flex;
+  align-items: center;
+  gap: 170px;
+  justify-content: center;
+  margin-bottom: 80px;
+  margin: 0 auto 80px;
+}
+.container .featuers .feats {
+  height: 100%;
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(100px, 250px));
+  grid-template-rows: repeat(3, minmax(50px, 130px));
+}
+.container .featuers .feats .feat h5 {
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+.container .featuers .feats .feat p {
+  color: hsl(201, 11%, 66%);
+  font-size: 13px;
+}
+@media (max-width: 767px) {
+  .container .featuers {
+    flex-direction: column;
+  }
+  .container .featuers .image img {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .container .featuers .feats {
+    text-align: center;
+    margin-top: -100px;
+    grid-template-rows: repeat(3, minmax(50px, 1fr));
+  }
+}
+/* End featuers */
+/* Start access */
+.container .access .title {
+  max-width: 400px;
+  margin: 0 auto 50px;
+}
+.container .access .title h3 {
+  font-size: 26px;
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 10px;
+}
+.container .access .title p {
+  font-size: 12px;
+  color: hsl(201, 11%, 66%);
+}
+@media (max-width: 767px) {
+  .container .access .image img {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+/* End access */
+/* Start charge */
+.container .charge {
+  margin-bottom: 150px;
+}
+.container .charge .title {
+  margin-bottom: 60px;
+}
+.container .charge .title h3 {
+  font-size: 26px;
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 10px;
+}
+.container .charge .title p {
+  font-size: 12px;
+  color: hsl(201, 11%, 66%);
+}
+.container .charge .work {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 350px));
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 50px;
+}
+.container .charge .work .feature img {
+  margin-bottom: 20px;
+}
+.container .charge .work .feature h4 {
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 10px;
+}
+.container .charge .work .feature p {
+  font-size: 13px;
+  color: hsl(201, 11%, 66%);
+}
+/* End charge */
+/* Strat logos */
+.container .logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, calc(1350px / 5)));
+  align-content: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  row-gap: 50px;
+}
+@media (max-width: 767px) {
+  .container .logos {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 400px));
+  }
+}
+/* End logos */
+/* Start clipboard */
+.container .clipboard .title {
+  max-width: 450px;
+  margin: 0 auto 50px;
+}
+.container .clipboard .title h3 {
+  font-size: 26px;
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 10px;
+}
+.container .clipboard .title p {
+  font-size: 12px;
+  color: hsl(201, 11%, 66%);
+}
+/* End clipboard */
+/* Start Footer */
+.footer {
+  padding: 20px 100px;
+  background-color: #f5f6f8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .logo_link {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 150px));
+  align-content: center;
+}
+.footer .logo_link .logo img {
+  width: 60px;
+}
+.footer .logo_link .link {
+  display: block;
+  padding: 10px;
+}
+.footer .logo_link .link a {
+  text-decoration: none;
+  color: hsl(210, 10%, 33%);
+  font-size: 16px;
+  transition: 0.3s;
+}
+.footer .logo_link .link a:hover {
+  color: hsl(171, 66%, 44%);
+}
+.footer .icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+.footer .icons .icon i {
+  font-size: 25px;
+  transition: 0.3s;
+  color: hsl(210, 10%, 33%);
+}
+.footer .icons .icon i:hover {
+  color: hsl(171, 66%, 44%);
+}
+@media (max-width: 767px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer .logo_link {
+    grid-template-columns: repeat(1, 100%);
+    align-content: center;
+  }
+  .footer .logo_link .link p{
+    text-align: center;
+  }
+  .footer .logo_link .link p:nth-child(1),
+  .footer .logo_link .link p:nth-child(3),
+  .footer .logo_link .link p:nth-child(5){
+    margin-bottom: 15px;
+  }
+  
+  .footer .logo_link .logo  {
+    margin: auto;
+    margin-bottom: 5px;
+  }
+  .footer .icons {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+/* End Footer */
